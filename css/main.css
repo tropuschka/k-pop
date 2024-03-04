@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background-color: #c2aed1;
+  height: 100%;
+}
+
+@media (max-width: 1577px) {
+  .main_header {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1578px) {
+  .main_header {
+    margin-left: 180px;
+  }
+}
+@media (max-width: 767px) {
+  .menu, .main_field {
+    width: 100%;
+  }
+  body, html {
+    background-color: #dacfe3;
+  }
+}
+@media (min-width: 768px) {
+  .menu, .main_field {
+    width: 70%;
+  }
+}
+@media (max-width: 575px) {
+  .main_header {
+    font-size: 36px;
+  }
+}
+@media (min-width: 576px) {
+  .main_header {
+    font-size: 48px;
+  }
+}
+ul, li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.menu {
+  display: block;
+  text-align: center;
+  background-color: #a586b5;
+  margin: 0 auto;
+}
+.menu a {
+  color: white;
+  font-size: 30px;
+  font-family: "Unbounded", sans-serif;
+}
+.menu > ul > li, .menu > li > li {
+  display: inline-block;
+  padding: 15px;
+}
+.menu > ul > li:hover, .menu > li > li:hover {
+  background-color: #9068a3;
+}
+.menu .active_page {
+  background-color: #785394;
+}
+
+.menu_2:hover > .menu_list {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background-color: #9068a3;
+}
+
+.menu_list {
+  display: none;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: -15px;
+  background-color: #926eae;
+}
+.menu_list li {
+  padding: 10px 20px;
+  margin: 0;
+}
+.menu_list > li > a {
+  font-size: 25px;
+}
+.menu_list > li:hover {
+  background-color: #785394;
+}
+
+.main_field {
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: #dacfe3;
+  color: #492366;
+  font-family: "Roboto Slab", serif;
+}
+.main_field a {
+  color: #492366;
+}
+
+.main_header {
+  display: block;
+  padding: 30px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+
+.group_all {
+  text-align: center;
+}
+
+footer {
+  display: block;
+  position: relative;
+  text-align: center;
+  background-color: #a586b5;
+  margin-top: 0;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  font-family: "Unbounded", sans-serif;
+}
+footer ul > li, footer li > li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.top_button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #492366;
+  position: fixed;
+  bottom: 90px;
+  right: 17%;
+  z-index: 3;
+  text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.top_button::before {
+  content: "Up";
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 12px;
+}
+.top_button:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.top_link {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.nav_line {
+  display: block;
+  text-align: left;
+  background-color: #926eae;
+  margin: 0 auto;
+  padding: 5px 15px;
+  color: white;
+}
+.nav_line a {
+  color: white;
+  text-decoration: none;
+}
+.nav_line .active_link {
+  text-decoration: underline;
+}
+
+.field {
+  min-height: 100%;
+}

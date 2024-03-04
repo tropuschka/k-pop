@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@media (max-width: 575px) {
+  .group {
+    margin: 0 auto 60px;
+  }
+}
+@media (min-width: 576px) {
+  .group {
+    margin: 0 60px 60px;
+  }
+}
+.field {
+  padding: 0 30px;
+}
+
+@media (max-width: 434px) {
+  .group {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    background-color: #a586b5;
+    text-align: center;
+    max-width: 85%;
+    padding: 5px;
+    border: 3px solid #9068a3;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .group:hover {
+    background-color: #c2aed1;
+  }
+  .group:hover > h2 {
+    background: none;
+  }
+  .search {
+    background-color: #926eae;
+    border-color: #785394;
+  }
+}
+@media (min-width: 435px) {
+  .group {
+    display: inline-block;
+    height: 200px;
+    width: 400px;
+    border-radius: 15px;
+    background-color: #a586b5;
+    text-align: center;
+    background-size: 100%;
+    max-width: 80%;
+    background-repeat: no-repeat;
+  }
+  .group:hover > h2 {
+    background-color: rgba(218, 207, 227, 0.7);
+  }
+  .boy {
+    background-image: url(../pics/min/boy/ATEEZ.jpg);
+  }
+  .girl {
+    background-image: url(../pics/min/girl/TWICE.jpg);
+  }
+  .mix {
+    background-image: url(../pics/min/mix/KARD.png);
+  }
+  .solo {
+    background-image: url(../pics/min/solo/hyuna.jpg);
+  }
+  .search {
+    display: inline-block;
+    height: auto;
+    border-radius: 15px;
+    background-color: #926eae;
+    text-align: center;
+    width: 70%;
+    padding: 5px;
+    border: 3px solid #785394;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .search:hover {
+    background-color: #c2aed1;
+  }
+  .search:hover > h2 {
+    background: none;
+  }
+}
+h2 {
+  line-height: 2em;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #492366;
+}
