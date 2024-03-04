@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/detail.css">
+    <title>Поиск</title>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <script type="text/babel" src="js/detail.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="main">О жанре</a></li>
+                <li class="menu_2 active_page"><a href="menu">Исполнители</a>
+                    <ul class="menu_list">
+                        <li><a href="boy">Мужские группы</a></li>
+                        <li><a href="girl">Женские группы</a></li>
+                        <li><a href="mix">Смешанные группы</a></li>
+                        <li><a href="solo">Соло</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_field">
+        <div class="nav_line"><a href="menu">Исполнители</a> / <a href="search" id="back">Поиск групп и исполнителей</a> / <a href="detail" class="active_link" id="link"></a></div>
+        <div class="field">
+            <a href="#top" class="top_link"><div class="top_button"></div></a>
+            <div class="search_field" id="place">
+
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://kpop.fandom.com/ru/wiki/K-pop_вики">K-pop Wiki</a></li>
+            <li><a href="mailto:tryan.u@mail.ru">Обратная связь</a></li>
+            <li>@2024</li>
+        </ul>
+    </footer>
+
+</body>
+</html>
